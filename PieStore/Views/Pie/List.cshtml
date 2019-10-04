@@ -1,18 +1,11 @@
 ﻿@model PieStore.ViewModels.PiesListViewModel
 
-<html>
-<head>
-    <title>Pie Store</title>
-</head>
-<body>
-    <h1>@Model.CurrentCategory</h1>
-    @foreach (var pie in Model.Pies)
-    {
-        <div>
-            <h2>@pie.Name</h2>
-            <h3>@pie.Price.ToString("c")</h3>
-            <h4>@pie.Category.CategoryName</h4>
-        </div>
-    }
-</body>
-</html>
+<h1>@Model.CurrentCategory</h1>
+@foreach (var pie in Model.Pies)
+{
+    <div>
+        <h2>@pie.Name</h2>
+        <h3>@pie.Price.ToString("c")</h3>
+        <h4>@pie.Category.CategoryName</h4>
+    </div>
+}
