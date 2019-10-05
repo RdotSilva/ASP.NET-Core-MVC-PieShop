@@ -43,5 +43,15 @@ namespace PieStore.Controllers
             }
             return RedirectToAction("Index");
         }
+        public RedirectToActionResult RemoveFromShoppingCart(int pieId)
+        {
+            var selectedPie = _pieRepository.AllPies.FirstOrDefault(p => p.PieId == pieId);
+
+            if (selectedPie != null)
+            {
+                _shoppingCart.RemoveFromCart(selectedPie);
+            }
+            return RedirectToAction("Index");
+        }
     }
 }
