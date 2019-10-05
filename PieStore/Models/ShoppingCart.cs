@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using PieStore.Models;
 
-namespace BethanysPieShop.Models
+namespace PieStore.Models
 {
     public class ShoppingCart
     {
