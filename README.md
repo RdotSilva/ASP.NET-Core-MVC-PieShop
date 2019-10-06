@@ -1,10 +1,13 @@
 # ASP.NET Core MVC Pie Store
 
-Online store that allows users to view lists of pies for sale and select pies for purchase.
+Online store that allows users to view lists of pies for sale & select pies for purchase. Homepage lists the pies of the week.
+Users must register/login to add pies to cart & view checkout form.
 
 ## Screenshots
 
-Coming soon...
+![Home Page](https://i.imgur.com/joUONeK.jpg "Home Page")
+![Shopping Cart](https://i.imgur.com/QbNrFVP.png "Shopping Cart")
+![Checkout](https://i.imgur.com/N6ikHST.png "Checkout")
 
 ## Built With
 
