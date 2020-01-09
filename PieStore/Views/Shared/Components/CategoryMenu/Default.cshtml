@@ -9,12 +9,12 @@
         {
             <li>
                 <a asp-controller="Pie" asp-action="List"
-                   asp-route-category="@category.CategoryName">@category.CategoryName</a>
+                   asp-route-id="@category.CategoryId">@category.CategoryName</a>
             </li>
         }
         <li class="divider"></li>
         <li>
-            <a asp-controller="Pie" asp-action="List" asp-route-Category="">View all pies</a>
+            <a asp-controller="Pie" asp-action="List" asp-route-id="4">All pies</a>
         </li>
     </ul>
 </li>
