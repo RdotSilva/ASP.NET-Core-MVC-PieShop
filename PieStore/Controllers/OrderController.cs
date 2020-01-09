@@ -47,7 +47,7 @@ namespace PieStore.Controllers
 
         public IActionResult CheckoutComplete()
         {
-            ViewBag.CheckoutCompleteMessage = "Thanks for your order. You'll soon enjoy our delicious pies!";
+            ViewBag.CheckoutCompleteMessage = "Your order has been placed. Your pies will ship out within the next 24 hours. Thank you for your business.";
             return View();
         }
     }
