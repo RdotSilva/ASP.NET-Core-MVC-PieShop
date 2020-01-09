@@ -1,4 +1,7 @@
 ﻿@model PiesListViewModel
+@{
+    ViewData["Title"] = @Model.CurrentCategory;
+}
 
 <h1>@Model.CurrentCategory</h1>
 @foreach (var pie in Model.Pies)
