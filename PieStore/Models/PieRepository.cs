@@ -24,6 +24,21 @@ namespace PieStore.Models
         {
             get { return _appDbContext.Pies.Include(c => c.Category).Where(p => p.IsPieOfTheWeek); }
         }
+
+        public IEnumerable<Pie> FruitPies
+        {
+            get { return _appDbContext.Pies.Include(c => c.Category).Where(p => p.CategoryId == 1); }
+        }
+
+        public IEnumerable<Pie> CheeseCakes
+        {
+            get { return _appDbContext.Pies.Include(c => c.Category).Where(p => p.CategoryId == 2); }
+        }
+
+        public IEnumerable<Pie> SeasonalPies
+        {
+            get { return _appDbContext.Pies.Include(c => c.Category).Where(p => p.CategoryId == 3); }
+        }
         public Pie GetPieById(int pieId)
         {
             return _appDbContext.Pies.FirstOrDefault(p => p.PieId == pieId);

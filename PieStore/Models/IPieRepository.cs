@@ -9,6 +9,10 @@ namespace PieStore.Models
     {
         IEnumerable<Pie> AllPies { get; }
         IEnumerable<Pie> PiesOfTheWeek { get; }
+        IEnumerable<Pie> FruitPies { get; }
+        IEnumerable<Pie> CheeseCakes { get; }
+        IEnumerable<Pie> SeasonalPies { get; }
+
         Pie GetPieById(int pieId);
     }
 }
