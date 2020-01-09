@@ -19,12 +19,30 @@ namespace PieStore.Controllers
             _categoryRepository = categoryRepository;
         }
 
-        public ViewResult List()
+        public IActionResult List(int id)
         {
-            PiesListViewModel piesListViewModel =  new PiesListViewModel();
-            piesListViewModel.Pies = _pieRepository.AllPies;
+            PiesListViewModel piesListViewModel = new PiesListViewModel();
 
-            piesListViewModel.CurrentCategory = "Cheese Cakes";
+            switch (id)
+            {
+                case 1:
+                    piesListViewModel.Pies = _pieRepository.FruitPies;
+                    piesListViewModel.CurrentCategory = "Fruit Pies";
+                    break;
+                case 2:
+                    piesListViewModel.Pies = _pieRepository.CheeseCakes;
+                    piesListViewModel.CurrentCategory = "Cheese Cakes";
+                    break;
+                case 3:
+                    piesListViewModel.Pies = _pieRepository.SeasonalPies;
+                    piesListViewModel.CurrentCategory = "Seasonal Pies";
+                    break;
+                case 4:
+                    piesListViewModel.Pies = _pieRepository.AllPies;
+                    piesListViewModel.CurrentCategory = "All Pies";
+                    break;
+            }
+
             return View(piesListViewModel);
         }
 
