@@ -1,7 +1,9 @@
 # ASP.NET Core MVC Pie Store
 
-Online store that allows users to view lists of pies for sale & select pies for purchase. Homepage lists the pies of the week.
+E-commerce pie store that allows users to view lists of pies for sale & select pies for purchase. Homepage lists the pies of the week.
 Users can add pies to their shopping cart without registering, however users must register and login to checkout.
+
+Live Demo hosted using Microsoft Azure: [Azure Demo](https://piestore20200110103214.azurewebsites.net/ "Azure Demo")
 
 ## Built With
 
@@ -12,6 +14,7 @@ Users can add pies to their shopping cart without registering, however users mus
 - Razor Pages
 - SQL
 - Bootstrap 3
+- Microsoft Azure
 
 ## Screenshots
 
