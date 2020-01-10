@@ -5,9 +5,9 @@ Users must register/login to add pies to cart & view checkout form.
 
 ## Screenshots
 
-![Home Page](https://i.imgur.com/joUONeK.jpg "Home Page")
-![Shopping Cart](https://i.imgur.com/QbNrFVP.png "Shopping Cart")
-![Checkout](https://i.imgur.com/N6ikHST.png "Checkout")
+![Home Page](https://i.imgur.com/itg2JME.jpg "Home Page")
+![Shopping Cart](https://i.imgur.com/qXG1lwn.png "Shopping Cart")
+![Checkout](https://i.imgur.com/Krk7KSP.png "Checkout")
 
 ## Built With
 
